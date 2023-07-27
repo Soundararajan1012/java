@@ -1,0 +1,31 @@
+package ExceptionHandling;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+public class inputmismatchhandling1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		
+		try
+		{
+			System.out.println("Enter a:");
+			int a=sc.nextInt();
+			System.out.println("Enter b:");
+			int b=sc.nextInt();
+			System.out.println("Output:"+(a+b));
+		}
+		catch(InputMismatchException e)
+		{
+			System.out.println("Select the value");
+			System.out.println("Exception Handled");
+		}
+		finally
+		{
+			System.out.println("well done");
+		}
+		
+
+	}
+
+}
